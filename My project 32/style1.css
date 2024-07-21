@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("My images/my pic2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0px;
+    height: 2.75px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.33s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 22px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: hwb(180 4% 5% / 0.989);
+    position: relative;
+}
+
+.header-text h1 span::after {
+    content: "";
+    width: 0px;
+    height: 2.75px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    transition: 0.35s;
+}
+
+.header-text h1 span:hover::after {
+    width: 100%;
+}
+
+/* About section */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.35s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: aqua;
+    font-size: 17px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+.section-2 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Projects, Resume, and Contact sections */
+#projects, #resume, #contact {
+    padding: 75px 0;
+    color: #ababab;
+}
+
+/* #projects{
+    background-color: #121212;  
+    Darker background for contrast 
+} */
+    
+
+
+.container2{
+    background-color: #000000;
+}
+
+.div-class{
+    /* background-color: #b83232; */
+}
+.project-part1{
+    margin-top: 15px;
+    background-color: #070707f1;
+}
+
+.project-part2{
+    background-color: #070707f1;
+    
+}
+
+
+
+
+
+#projects .container2
+{display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+#resume .container3{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+} 
+
+/* #contact .container4 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+} */
+
+#projects h1 span{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+} 
+
+#resume h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+} 
+
+/* #contact h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project, .project2 {
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.project-part1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.project img, .project2 img {
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 145px;
+    height: auto;
+}
+
+.project2 img {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
+
+#resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: #080808;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* #contact p {
+    margin: 10px 0;
+    font-size: 18px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px; /* Adjust padding as needed */
+    color: #ababab;
+    background-color: #080808; /* Same background color as other sections */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Ensure it positions above the footer */
+    margin-bottom: 1px; /* Add space between the contact section and the footer */
+}
+
+#contact h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15.6px;
+}
+
+#contact p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-right: 15px; /* Space between links */
+    color: #00aaff; /* Link color */
+    text-decoration:none; /* Remove underline */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #139eee; /* Change color on hover if needed */
+}
+
+#contact .social-links {
+    margin-top: 20px; /* Space above the social links */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2 h1 span {
+    color: hwb(0 100% 0%);
+    position: relative;
+}
+
+.container2 h1 span::after {
+    content: "";
+    width: 0px;
+    height: 2.5px;
+    background: rgba(255, 255, 255, 0.553);
+    position: absolute;
+    left: 0;
+    bottom: 0.7px;
+    transition: 0.0s;
+}
+
+.container2 h1 span:hover::after {
+    width: 100%;
+}
+
+
+.container3 h1 span {
+    color: hwb(0 100% 0%);
+    position: relative;
+}
+
+.container3 h1 span::after {
+    content: "";
+    width: 0px;
+    height: 2.5px;
+    background: rgba(255, 255, 255, 0.553);
+    position: absolute;
+    left: 0;
+    bottom: 0.7px;
+    transition: 0.0s;
+}
+
+.container3 h1 span:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* 
+.container4 h1 span {
+    color: hwb(0 100% 0%);
+    position: relative;
+}
+
+.container4 h1 span::after {
+    content: "";
+    width: 0px;
+    height: 2.5px;
+    background: rgba(255, 255, 255, 0.553);
+    position: absolute;
+    left: 0;
+    bottom: 0.7px;
+    transition: 0.0s;
+}
+
+.container4 h1 span:hover::after {
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project h2,.project2 h2{
+    color: aqua;
+}
+
+.container3{
+    background-color: #080808;
+}
+
+.container3 a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #fff; /* Default text color */
+    background-color: #008CBA; /* Default background color */
+    padding: 10px 20px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    font-size: 18px; /* Adjust font size */
+    display: inline-block; /* Ensure padding is applied correctly */
+    margin-top: 10px; /* Space between heading and link */
+}
+
+/* Hover effect */
+.container3 a:hover {
+    background-color: #005f6b; /* Darker background color on hover */
+    color: #e0e0e0; /* Lighter text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
+}
+
+.project img, .project2 img{
+    text-decoration: none; /* Remove underline from the link */
+    color: #fff; /* Default text color */
+    background-color:#070707f1; /* Default background color */
+    padding: 10px 20px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    font-size: 18px; /* Adjust font size */
+    display: inline-block; /* Ensure padding is applied correctly */
+    margin-top: 10px; /* Space between heading and link */
+}
+
+.project img:hover, .project2 img:hover{
+    background-color: #008CBA; 
+    color: #e0e0e0; 
+    transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+footer {
+    background-color: #78737386;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+} */
+
+footer {
+    background: linear-gradient(to right, #000000, #363535);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: background 0.5s ease;
+}
+
+footer:hover {
+    background: linear-gradient(to left, #000000, #363535);
+}
