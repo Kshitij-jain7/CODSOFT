@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortFolio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="My images/Kshitijj.png" alt="my logo" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <!-- <li><a href="index.html">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span class="my-name">Kshitij Jain</span> <br> from India </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="My images\Untitled design (5).png" alt="My photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 style="color:#fff;">About Me</h1>
+                    <p>I'm Kshitij Jain, a B.Tech student in Computer Science and Engineering with a passion for coding
+                        and web development. Specializing in full stack development, I excel at creating dynamic,
+                        user-friendly websites that combine innovative design with robust functionality. My goal is to
+                        craft seamless digital experiences that make a lasting impact. When I'm not coding, I enjoy
+                        exploring the latest web technologies and contributing to open-source projects. Let's connect
+                        and build something extraordinary together!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONTEND DEVELOPMENT</span><br>HTML, CSS, Bootstrap, Tailwind, Angular JS, React JS</li>
+                            <li><span>BACKEND DEVELOPMENT</span><br>JavaScript, TypeScript, Node JS, Express JS, Redux, Python, Java, Ruby on Rails</li>
+                            <li><span>PROGRAMMING / TOOLS</span><br>Git & Github, GitLab, Postman, MongoDB, MySQL, PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>NEC India Pvt.Ltd.</span><br>Software Engineer (Oct 2022-Present)</li>
+                            <li><span>Eatoes</span><br>Full Stack Web Developer (June 2021-Oct 2022)</li>
+                            <li><span>Coding Ninjas</span><br>Teaching Assistant (Jan 2021-June 2021)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>B.TECH</span><br>Noida Institute of Engineering And Technology (2023-2027)</li>
+                            <li><span>SENIOR SECONDARY</span><br>Sacred Heart Convent School (ICSC) 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container2">
+            <div class="div-class">
+            <h1><span>Projects</span></h1>
+        </div>
+            <div class="project">
+                <div class="project-part1">
+                <h2>Landing Page</h2>
+                <a href="https://www.google.co.in/" target="_blank"><img src="My images\Depositphotos_65204039_original.jpg" alt="Project 1"></a>
+                <p>This project is build using html & css</p>
+            </div>
+            </div>
+            <div class="project2">
+                <div class="project-part2">
+                <h2>A Basic Calculator</h2>
+                <a href="https://www.google.co.in/" target="_blank"><img src="calcpic.png" alt="Project 2"></a>
+                <p>This is a Calculator to solve basic mathematical problems,created using html ,css and javascript
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="container3">
+            <h1> <span>Resume</span></h1>
+            <a href="kj's Resume-hackerresume (8).pdf" download>Download My Resume</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container4">
+            <h1><span>Contact</span></h1>
+            <p>Email: kshitijain999@gmail.com</p>
+            <p>Phone: +91 8888888888</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kshitij-jain-10b20b2a4" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/jain_kshitij171/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="container5">
+            <p>&copy; 2024 Kshitij Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (i of tablinks) {
+                i.classList.remove("active-link");
+            }
+
+            for (i of tabcontents) {
+                i.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
